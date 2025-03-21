@@ -23,9 +23,22 @@
 		608DDCEC2D8D08770088EC0F /* ProblemSolvingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProblemSolvingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		608DA69E2D8D222500A2BC90 /* Exceptions for "ProblemSolving" folder in "ProblemSolvingTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"BOJ/Bronze/1816. 암호 키.swift",
+			);
+			target = 608DDCEB2D8D08770088EC0F /* ProblemSolvingTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		608DDCE02D8D079A0088EC0F /* ProblemSolving */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				608DA69E2D8D222500A2BC90 /* Exceptions for "ProblemSolving" folder in "ProblemSolvingTests" target */,
+			);
 			path = ProblemSolving;
 			sourceTree = "<group>";
 		};
