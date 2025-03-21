@@ -31,6 +31,7 @@
 				"BOJ/Bronze/14568. 2017 연세대학교 프로그래밍 경시대회.swift",
 				"BOJ/Bronze/19532. 수학은 비대면강의입니다.swift",
 				"BOJ/Silver/2503. 숫자 야구.swift",
+				"Programmers/161988. 연속 펄스 부분 수열의 합.swift",
 			);
 			target = 608DDCEB2D8D08770088EC0F /* ProblemSolvingTests */;
 		};
