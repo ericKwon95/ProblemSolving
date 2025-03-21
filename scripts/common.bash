@@ -86,23 +86,23 @@ function make_solution_code() {
     local content
     content=$(
     cat <<EOF
-    //
-    //  $question_id. $question_name.swift
-    //  $question_url
-    //  Algorithm
-    //
-    //  Created by $nickname on $(date "+%Y/%m/%d").
-    //
-    
-    import Foundation
-    
-    struct $ps_platform$question_id {
-        $swift_code
-    }
-    
-    EOF
-    )
-    echo "$content"
+//
+//  $question_id. $question_name.swift
+//  $question_url
+//  Algorithm
+//
+//  Created by $nickname on $(date "+%Y/%m/%d").
+//
+
+import Foundation
+
+struct $ps_platform$question_id {
+  $swift_code
+}
+
+EOF
+  )
+  echo "$content"
 }
 
 # Generate and save the Swift test file
@@ -120,29 +120,28 @@ function make_unit_test_code() {
     
     content=$(
     cat <<EOF
-    //
-    //  $file_name.swift
-    //  AlgorithmTests
-    //
-    //  Created by $nickname on $(date "+%Y/%m/%d").
-    //
+//
+//  $file_name.swift
+//  AlgorithmTests
+//
+//  Created by $nickname on $(date "+%Y/%m/%d").
+//
     
-    import Testing
+import Testing
     
-    @Suite(<#Suite Name#>)
-    struct $file_name {
-        @Test(<#Test Name#>)
-        func testExample1() {
-            let problem = ${ps_platform}${question_id}()
-            let result = problem.solution(<#Insert Input#>)
-            #expect(result == <#Insert Predicted Value#>)
-        }
+@Suite(<#Suite Name#>)
+struct $file_name {
+    
+    @Test(<#Test Name#>)
+    func testExample1() {
+        let problem = ${ps_platform}${question_id}()
+        let result = problem.solution(<#Insert Input#>)
+        #expect(result == <#Insert Predicted Value#>)
     }
-    
-    EOF
-    )
-    
-    echo "$content"
+}
+EOF
+)
+echo -n "$content"
 }
 
 # Save the Swift file

@@ -11,9 +11,9 @@ function create_swift_code_snippet() {
   local question_id="$1"
 
   local swift_code="
-  func solution(<#parameters#>) -> <#return type#> {
-    <#function body#>
-  }
+    func solution(<#parameters#>) -> <#return type#> {
+        <#function body#>
+    }
 "
   echo "$swift_code"
 }
