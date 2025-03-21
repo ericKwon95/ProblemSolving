@@ -7,10 +7,10 @@
     
 import Testing
     
-@Suite("백준 1816 암호 키 테스트")
+@Suite("백준 1816 암호 키")
 struct BOJ1816Tests {
     
-    @Test("테스트케이스 1 테스트")
+    @Test("테스트케이스 1")
     func testExample1() {
         let problem = BOJ1816()
         let result = problem.solution(3, [
