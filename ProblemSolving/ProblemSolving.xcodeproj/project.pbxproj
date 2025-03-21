@@ -28,6 +28,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				"BOJ/Bronze/1816. 암호 키.swift",
+				"BOJ/Bronze/14568. 2017 연세대학교 프로그래밍 경시대회.swift",
 			);
 			target = 608DDCEB2D8D08770088EC0F /* ProblemSolvingTests */;
 		};
